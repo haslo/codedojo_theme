@@ -26,7 +26,7 @@
                     <?php echo wp_kses_post( get_theme_mod( 'shapely_footer_copyright' ) ); ?>
                 </div>
                 <div class="footer-credits">
-                    <?php shapely_footer_info(); ?>
+                    Code Dojo, Design von <a href="https://haslo.ch/">haslo</a>
                 </div>
             </div><!-- .site-info -->
             <div class="col-sm-6 text-right">

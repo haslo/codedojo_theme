@@ -11,3 +11,10 @@ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Tags:         code, dojo
 Text Domain:  codedojo
 */
+
+#dojo-header {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: 0 80%;
+}

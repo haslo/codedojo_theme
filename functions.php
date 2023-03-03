@@ -1,4 +1,5 @@
 <?php
+
 add_action('wp_enqueue_scripts', 'codedojo_enqueue_styles');
 function codedojo_enqueue_styles()
 {
@@ -15,3 +16,5 @@ function codedojo_enqueue_styles()
         $theme->get('Version')
     );
 }
+
+require get_theme_file_path() . '/inc/images.php';
