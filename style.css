@@ -36,6 +36,14 @@ Text Domain:  codedojo
     max-height: 200px;
 }
 
+h1.entry-title {
+    margin-bottom: 40px;
+}
+
+.entry-content, .entry-content p {
+    font-size: 20px;
+}
+
 @media (max-width: 992px) {
     .dojo-character {
         display: none;
