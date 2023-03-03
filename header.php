@@ -76,9 +76,6 @@ if ( 1 == $shapely_transparent_header && $shapely_transparent_header_opacity ) {
         <?php if ( ! is_page_template( 'page-templates/template-home.php' ) && ! is_404() && ! is_page_template( 'page-templates/template-widget.php' ) ) : ?>
             <div class="header-callout">
                 <?php codedojo_header_image() ?>
-                <?php
-                //shapely_top_callout();
-                ?>
             </div>
         <?php endif; ?>
 
