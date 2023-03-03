@@ -10,11 +10,6 @@
 get_header(); ?>
 <?php $layout_class = shapely_get_layout_class(); ?>
     <div class="row">
-        <?php
-        if ( 'sidebar-left' == $layout_class ) :
-            get_sidebar();
-        endif;
-        ?>
         <div id="primary" class="col-md-8 mb-xs-24 <?php echo esc_attr( $layout_class ); ?>">
             <?php
             if ( have_posts() ) :
@@ -42,11 +37,33 @@ get_header(); ?>
             endif;
             ?>
         </div><!-- #primary -->
-        <?php
-        if ( 'sidebar-right' == $layout_class ) :
-            get_sidebar();
-        endif;
-        ?>
+        <aside id="secondary" class="widget-area col-md-4" role="complementary">
+            <div id="block-8" class="widget widget_block widget_text">
+                <?php codedojo_character_image() ?>
+            </div>
+        </aside>
+    </div>
+    <div class="row partner-logos">
+        <div class="col-sm-6 col-xs-6 col-lg-3">
+            <a href="http://playbern.ch/">
+                <img src="/wp-content/themes/codedojo/assets/images/partner/playbern.jpg">
+            </a>
+        </div>
+        <div class="col-sm-6 col-xs-6 col-lg-3">
+            <a href="https://www.kob.ch/">
+                <img src="/wp-content/themes/codedojo/assets/images/partner/kornhausbibliotheken.png">
+            </a>
+        </div>
+        <div class="col-sm-6 col-xs-6 col-lg-3">
+            <a href="https://maxomedia.ch/">
+                <img src="/wp-content/themes/codedojo/assets/images/partner/maxomedia.png">
+            </a>
+        </div>
+        <div class="col-sm-6 col-xs-6 col-lg-3">
+            <a href="https://www.erupt.ch/">
+                <img src="/wp-content/themes/codedojo/assets/images/partner/erupt.png">
+            </a>
+        </div>
     </div>
 <?php
 get_footer();
